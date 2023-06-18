@@ -94,7 +94,8 @@ body {
   justify-content: center;
 }
 
-.contact-info__item {
+.contact-info__item,
+.experiences__company-link {
   color: var(--secondary-text-color);
   text-decoration: none;
   display: flex;
@@ -102,7 +103,7 @@ body {
 }
 
 .contact-info__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .contact-info__item-icon-wrapper {
@@ -259,4 +260,13 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+li {
+  list-style-type: none;
+}
+
+li::before {
+  content: url("https://api.iconify.design/fa/square.svg?color=%23ff9a00&width=10&height=10");
+  margin-right: 5px;
 }
